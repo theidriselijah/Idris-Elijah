@@ -1,0 +1,28 @@
+ul {
+    display: flex;
+}
+
+li {
+    margin: 0 20px;
+    list-style: none;
+    font-size: 21px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+li::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #3C511D;
+    display: block;
+    transition: 0.3s ease-in-out;
+}
+
+li:hover::after {
+    width: 100%;
+}
+
+.menu {
+    color: #E9E9E6;
+}
