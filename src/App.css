@@ -5,16 +5,20 @@
     font-family: Helvetica, sans-serif;
 }
 
+body {
+    background: #E9E9E6;
+}
+
 h1 {
     font-size: 152px;
     color: #E9E9E6;
     background-image: url(./assets/paris-skyline.jpg);
-    background-size: cover;
     background-position: top -10px center;
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     background-attachment: fixed;
+    max-width: 834px;
 }
 
 h3 {
@@ -60,8 +64,48 @@ button:active {
     color: #3C511D;
 }
 
+form {
+    width: 383px;
+    height: 512px;
+    color: #E9E9E6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 49px auto;
+}
+
+input {
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 21px;
+    font-size: 16px;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    resize: none;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 16px;
+}
+
 .section {
-    padding: 57px 15px 0 15px;
+    padding: 57px 15px 57px 15px;
+}
+
+.hero-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero {
@@ -70,13 +114,11 @@ button:active {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
 }
 
 .hero p {
     color: #E9E9E6;
     font-size: 20px;
-    margin-top: 25px;
 }
 
 .header {
@@ -85,12 +127,15 @@ button:active {
     align-items: center;
 }
 
-.header p {
+.header-title p {
     font-size: 21px;
 }
 
 .about {
-    margin-bottom: 57px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
 }
 
 .about-section {
@@ -105,7 +150,6 @@ button:active {
 .portfolio {
     background-color: #000000;
     color: #000000;
-    padding: 15px;
 }
 
 .project {
@@ -140,7 +184,6 @@ button:active {
 
 .contact h4 {
     color: #000000;
-    margin-bottom: 39px;
 }
 
 .convo-box {
@@ -153,6 +196,7 @@ button:active {
     align-items: center;
     justify-content: center;
     border-radius: 8px;
+    margin: 49px auto;
 }
 
 .convo-box h5 {
@@ -163,4 +207,76 @@ button:active {
     font-size: 16px;
     margin: 50px;
     line-height: 20px;
+}
+
+@media (max-width: 400px) {
+    .hero h1 {
+        font-size: 100px;
+    }
+}
+
+@media (min-width: 560px) {
+    .hero h1 {
+        font-size: 200px;
+    }
+}
+
+@media (min-width: 740px) {
+    .hero h1 {
+        font-size: 250px;
+    }
+}
+
+@media (min-width: 834px) {
+    .hero h1 {
+        font-size: 300px;
+    }
+    
+    .header {
+        flex-direction: row;
+        gap: 25px
+    }
+
+    img {
+        width: 50%;
+    }
+
+    .about-section {
+        max-width: 700px;
+    }
+
+    .portfolio-projects {
+        display: flex;
+    }
+
+    .contact-section {
+        display: flex;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hero h1 {
+        font-size: 300px;
+    }
+    
+    .header {
+        flex-direction: row;
+        gap: 25px
+    }
+
+    img {
+        width: 50%;
+    }
+
+    .about-section {
+        max-width: 700px;
+    }
+
+    .portfolio-projects {
+        display: flex;
+    }
+
+    .contact-section {
+        display: flex;
+    }
 }

@@ -1,13 +1,13 @@
 import { useState } from 'react'
 import './Navbar.css'
-import Menu from './Menu'
+import Menu from './MenuIcon'
 
 export default function Navbar() {
-    const [showMenu, setShowMenu] = useState(false)
+    const [showMenuIcon, setShowMenuIcon] = useState(false)
 
     return (
         <nav className="navbar">
-            <Menu />
+            {showMenuIcon && <MenuIcon />}
         </nav>
     )
 }
