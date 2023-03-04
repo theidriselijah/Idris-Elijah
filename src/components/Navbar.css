@@ -7,5 +7,28 @@
     align-items: center;
     background: #000000;
     position: fixed;
+    z-index: 100;
 }
 
+.show-menu {
+    position: fixed;
+    z-index: 99;
+    background-color: #E9E9E6;
+    width: 100%;
+    transition: all 0.3ms ease;
+}
+
+.hide-menu {
+    display: none;
+    transition: all 0.3ms ease;
+}
+
+.menu-links {
+    margin: 80px 0 40px 0;
+    display: block;
+    text-align: center;
+}
+
+.menu-links li {
+    margin: 15px 0;
+}

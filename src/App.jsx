@@ -3,6 +3,7 @@ import './App.css'
 import aboutPic from './assets/idris-elijah.png'
 import Navbar from './components/Navbar'
 import Footer from "./components/Footer"
+import BackToTopButton from "./components/BackToTopButton"
 
 export default function App() {
   const [formData, setFormData] = useState(
@@ -151,6 +152,7 @@ export default function App() {
         </div>
       </main>
       <Footer />
+      <BackToTopButton />
     </div>
   );
 }
