@@ -90,7 +90,7 @@ export default function App() {
 
             <div className="project">
               <div className="project-img"></div>
-              <h5>Space tourism Site</h5>
+              <h5>Space tourism</h5>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
