@@ -1,6 +1,7 @@
 import { useState } from "react"
 import './App.css'
 import aboutPic from './assets/idris-elijah.png'
+import spaceTourism from './assets/space-tourism-website-screenshot.png'
 import Navbar from './components/Navbar'
 import Footer from "./components/Footer"
 import BackToTopButton from "./components/BackToTopButton"
@@ -41,7 +42,7 @@ export default function App() {
 
         <div className="section about" id="about">
           <div className="header">
-            <img src={aboutPic} />
+            <img className="about-pic" src={aboutPic} />
             <div className="header-title">
               <h3>Idris Elijah</h3>
               <p>Junior Front-End Web Developer</p>
@@ -74,8 +75,10 @@ export default function App() {
           <h4>Portfolio</h4>
           <div className="portfolio-projects">
             <div className="project">
-              <div className="project-img"></div>
-              <h5>Bug Tracker</h5>
+              <div className="project-img">
+                <img src={spaceTourism}/>
+              </div>
+              <h5>Space Tourism Site</h5>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -83,8 +86,8 @@ export default function App() {
                 nisi ut aliquip ex ea commodo consequat.
               </p>
               <div className="project-button-area">
-                <button>View Live</button>
-                <button>View Code</button>
+                <a href="https://zippy-cat-901da8.netlify.app" target="_blank"><button>View Live</button></a>
+                <a href="https://github.com/theidriselijah/Space-tourism-website/tree/main/Space%20Travel%20Site" target="_blank"><button>View Code</button></a>
               </div>
             </div>
 

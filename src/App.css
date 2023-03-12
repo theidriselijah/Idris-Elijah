@@ -39,7 +39,7 @@ h5 {
     margin-top: 9px;;
 }
 
-img {
+.about-pic {
     width: 70%;
     border-radius: 100%;
 }
@@ -66,7 +66,7 @@ button:active {
 }
 
 form {
-    max-width: 383px;
+    max-width: 400px;
     height: 512px;
     color: #E9E9E6;
     display: flex;
@@ -171,11 +171,12 @@ textarea {
     line-height: 20px;
 }
 
-.project-img {
+.project-img img {
     width: 320px;
     height: 254px;
     background-color: #000000;
     margin-top: 17px;
+    object-fit: cover;
 }
 
 .project-button-area {
